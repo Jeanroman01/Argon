@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argon Chemical</title>
 
-    <!-- CONEXIÓN AL CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,16 +16,19 @@
 
     <nav>
         <a href="#about">Nosotros</a>
-        
-         <div class="dropdown">
+
+        <div class="dropdown">
             <a href="#services" class="dropbtn">Servicios</a>
             <div class="dropdown-content">
-                <a href="#housekeeping">Housekeeping</a>
-                <a href="#industrial">Industrial</a>
-                <a href="#boilers">Tratamiento de aguas de Calderas</a>
-                <a href="#cooling">Tratamiento de aguas de Torres de enfriamiento y circuitos cerrados</a>
+                <a href="#" class="service-link" data-service="housekeeping">Housekeeping</a>
+                <a href="#" class="service-link" data-service="industrial">Industrial</a>
+                <a href="#" class="service-link" data-service="boilers">Tratamiento de aguas de Calderas</a>
+                <a href="#" class="service-link" data-service="cooling">
+                    Tratamiento de aguas de Torres de enfriamiento y circuitos cerrados
+                </a>
             </div>
         </div>
+
         <a href="#contact">Contacto</a>
     </nav>
 </header>
@@ -43,10 +46,10 @@
     <p>
         Fundada en el año 2003, Argon Chemical ofrece soluciones químicas
         confiables, seguras y eficientes para la industria moderna.
-        Brindamos servicios especializados en housekeeping industrial,
-        procesos industriales, tratamiento de aguas de calderas y
-        tratamiento de aguas de torres de enfriamiento y circuitos cerrados,
-        garantizando calidad, seguridad y alto desempeño en cada aplicación.
+        Brindamos servicios especializados en housekeeping, procesos
+        industriales, tratamiento de aguas de calderas y tratamiento de
+        aguas de torres de enfriamiento y circuitos cerrados, garantizando
+        calidad, seguridad y alto desempeño en cada aplicación.
     </p>
 </section>
 
@@ -55,27 +58,33 @@
 
     <div class="services">
 
-        <div class="card housekeeping">
+        <div class="card housekeeping service-card" data-service="housekeeping">
             <h4>Housekeeping</h4>
-            <p>Productos y soluciones de limpieza para el hogar...</p>
+            <p>Productos y soluciones de limpieza para el hogar.</p>
         </div>
 
-        <div class="card industrial">
+        <div class="card industrial service-card" data-service="industrial">
             <h4>Industrial</h4>
-            <p>Productos y servicios químicos diseñados para optimizar maquinaria...</p>
+            <p>Productos y servicios químicos diseñados para optimizar procesos y maquinaria.</p>
         </div>
 
-        <div class="card boilers">
+        <div class="card boilers service-card" data-service="boilers">
             <h4>Tratamiento de aguas de Calderas</h4>
-            <p>Programas químicos para prevenir incrustaciones...</p>
+            <p>Programas químicos para prevenir incrustaciones y corrosión.</p>
         </div>
 
-        <div class="card cooling">
+        <div class="card cooling service-card" data-service="cooling">
             <h4>Tratamiento de aguas de Torres de enfriamiento</h4>
-            <p>Control integral del agua para proteger equipos...</p>
+            <p>Control integral del agua para proteger equipos y prolongar su vida útil.</p>
         </div>
 
     </div>
+</section>
+
+<section id="service-detail" style="display:none;">
+    <button id="backBtn">← Volver a servicios</button>
+    <h3 id="serviceTitle"></h3>
+    <p id="serviceText"></p>
 </section>
 
 <section id="contact">
@@ -88,8 +97,11 @@
 </section>
 
 <footer>
-    <p>© 2026 Argon Chemicals — La Solución Segura</p>
+    <p>© 2026 Argon Chemical — La Solución Segura</p>
 </footer>
+
+<!-- JS (AL FINAL, MUY IMPORTANTE) -->
+<script src="main.js"></script>
 
 </body>
 </html>
