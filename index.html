@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Argon Chemicals</title>
+    <title>Argon Chemical</title>
 
     <!-- CONEXIÓN AL CSS -->
     <link rel="stylesheet" href="style.css">
@@ -12,11 +12,20 @@
 <body>
 
 <header>
-    <img src="images/Argonlogo.png" alt="Argon Chemicals Logo" class="logo">
+    <img src="images/Argonlogo.png" alt="Argon Chemical Logo" class="logo">
 
     <nav>
         <a href="#about">Nosotros</a>
-        <a href="#services">Servicios</a>
+        
+         <div class="dropdown">
+            <a href="#services" class="dropbtn">Servicios</a>
+            <div class="dropdown-content">
+                <a href="#housekeeping">Housekeeping</a>
+                <a href="#industrial">Industrial</a>
+                <a href="#boilers">Tratamiento de aguas de Calderas</a>
+                <a href="#cooling">Tratamiento de aguas de Torres de enfriamiento y circuitos cerrados</a>
+            </div>
+        </div>
         <a href="#contact">Contacto</a>
     </nav>
 </header>
@@ -24,7 +33,7 @@
 <div class="hero">
     <h2>La Solución Segura</h2>
     <p>
-        Argon Chemicals ofrece soluciones químicas confiables,
+        Argon Chemical ofrece soluciones químicas confiables,
         seguras y eficientes para la industria moderna.
     </p>
 </div>
@@ -32,9 +41,12 @@
 <section id="about">
     <h3>Sobre Nosotros</h3>
     <p>
-        En Argon Chemicals trabajamos con altos estándares de calidad y seguridad,
-        brindando productos químicos diseñados para satisfacer las necesidades
-        industriales con responsabilidad y compromiso.
+        Fundada en el año 2003, Argon Chemical ofrece soluciones químicas
+        confiables, seguras y eficientes para la industria moderna.
+        Brindamos servicios especializados en housekeeping industrial,
+        procesos industriales, tratamiento de aguas de calderas y
+        tratamiento de aguas de torres de enfriamiento y circuitos cerrados,
+        garantizando calidad, seguridad y alto desempeño en cada aplicación.
     </p>
 </section>
 
@@ -42,28 +54,35 @@
     <h3>Nuestros Servicios</h3>
 
     <div class="services">
-        <div class="card">
-            <h4>Distribución de Productos Químicos</h4>
-            <p>Abastecimiento confiable de químicos para diferentes industrias.</p>
+
+        <div class="card housekeeping">
+            <h4>Housekeeping</h4>
+            <p>Productos y soluciones de limpieza para el hogar...</p>
         </div>
 
-        <div class="card">
-            <h4>Asesoría Especializada</h4>
-            <p>Soporte técnico para el uso seguro y eficiente de nuestros productos.</p>
+        <div class="card industrial">
+            <h4>Industrial</h4>
+            <p>Productos y servicios químicos diseñados para optimizar maquinaria...</p>
         </div>
 
-        <div class="card">
-            <h4>Calidad y Seguridad</h4>
-            <p>Control riguroso que garantiza cumplimiento de normas internacionales.</p>
+        <div class="card boilers">
+            <h4>Tratamiento de aguas de Calderas</h4>
+            <p>Programas químicos para prevenir incrustaciones...</p>
         </div>
+
+        <div class="card cooling">
+            <h4>Tratamiento de aguas de Torres de enfriamiento</h4>
+            <p>Control integral del agua para proteger equipos...</p>
+        </div>
+
     </div>
 </section>
 
 <section id="contact">
     <h3>Contacto</h3>
     <p>
-        📧 contacto@argonchemicals.com<br>
-        📞 +502 0000 0000<br>
+        📧 argonrece@yahoo.com<br>
+        📞 +502 3797 7995<br>
         📍 Guatemala
     </p>
 </section>
